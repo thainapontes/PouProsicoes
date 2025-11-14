@@ -10,6 +10,7 @@ Luiz Fernando Ramos Toledo | @fernandoToledo69
 Davi Lucas da Silva Pinheiro | @davi081dev
 Dados da Disciplina e Instituição
 Disciplina: Programação Imperativa e Funcional - 2025.2 Instituição de Ensino: CESAR School
+
 ---
 - Nome do Jogo Desenvolvido:
 PouProsições
