@@ -43,26 +43,26 @@ void tutorial()
     screenDrawBorders();
 
     // Movimentar
-    screenGotoxy(7, 8);
+    screenGotoxy(13, 8);
     printf("  Use A  D para se mover");
 
     // Proposições
-    screenGotoxy(55, 8);
+    screenGotoxy(13, 12);
     printf("Você receberá uma proposição aleatória");
-    screenGotoxy(55, 11);
+    screenGotoxy(13, 13);
     printf("           Expressão: ¬F → F          ");
 
     // Interface do jogo
 
     // Voltar ao menu
-    screenGotoxy((MAXX / 2) - 15, MAXY - 2);
+    screenGotoxy(13, 22);
     printf("Pressione ENTER para voltar");
     if (keyhit())
     {
         int tecla = readch();
         if (tecla == '\n')
         {
-            menuOpcoes();
+            telaInicial();
         }
     }
 }
@@ -72,7 +72,7 @@ void creditos()
     screenClear();
     screenDrawBorders();
 
-    screenGotoxy(45, 5);
+    screenGotoxy(13, 5);
     printf("Criado por");
 }
 
@@ -92,7 +92,7 @@ void sair()
 
 void telaDerrota()
 {
-    creenClear();
+    screenClear();
     screenDrawBorders();
 
     while (1)
@@ -115,7 +115,7 @@ void telaDerrota()
         {
             int ch = readch();
             if (ch == 32)
-            {                  // Tecla espaço
+            {                  // Espaço
                 iniciarGame(); // Joga novamente
                 break;
             }
@@ -136,7 +136,7 @@ int telaInicial() // Função para iniciar o menu
     while (1)
     {
         imprimirMenu();     // Imprime as opções do menu inicial
-        int op = getchar(); // lê um char para  switch
+        int op = getchar(); // lê um char para o switch
         switch (op)         // Switch das opções
         {
         case '1':
